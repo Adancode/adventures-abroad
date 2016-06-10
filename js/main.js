@@ -23,7 +23,7 @@ $(document).ready(function() {
      						attrs : {
      							fill : "#D14233"
      						},
-     						label :"Up to 30 Days Or Less"
+     						label :"30 Days Or Less"
      					},
                               {
                                    value: "Up to 90 Days",
