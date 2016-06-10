@@ -1,3 +1,6 @@
+var url = "https://adventures-abroad.firebaseio.com/";
+var dataRef = new Firebase(url);
+
 $(document).ready(function() {
 
      $(function(){
@@ -48,8 +51,8 @@ $(document).ready(function() {
      				]
      			},
      			plot :{
-     				title: "Cities population"
-     				, slices : [
+     				title: "Cities population",
+     				slices : [
      					{
      						max :500000,
      						attrs : {
@@ -1478,7 +1481,7 @@ $(document).ready(function() {
      			}
      		}
      	});
-     });
+});
 
 
-}); // Closes start-button click
+}); // Closes jQuery
