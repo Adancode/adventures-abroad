@@ -242,8 +242,8 @@ $(document).ready(function() {
      					"content": "<span style=\"font-weight:bold;\">Bolivia, Plurinational State Of<\/span><br \/>Population : 10088108"
      				}
      			},
-     			"BA": {
-     				"value": "3752228",
+     			"BOSNIA AND HERZEGOVINA": {
+     				"value": "Up to 90 Days",
      				"href" : "#",
      				"tooltip": {
      					"content": "<span style=\"font-weight:bold;\">Bosnia And Herzegovina<\/span><br \/>Population : 3752228"
@@ -270,8 +270,8 @@ $(document).ready(function() {
      					"content": "<span style=\"font-weight:bold;\">Brunei Darussalam<\/span><br \/>Population : 405938"
      				}
      			},
-     			"BG": {
-     				"value": "7476000",
+     			"BULGARIA": {
+     				"value": "Up to 90 Days",
      				"href" : "#",
      				"tooltip": {
      					"content": "<span style=\"font-weight:bold;\">Bulgaria<\/span><br \/>Population : 7476000"
@@ -403,8 +403,8 @@ $(document).ready(function() {
      					"content": "<span style=\"font-weight:bold;\">C\u00d4te D'ivoire<\/span><br \/>Population : 20152894"
      				}
      			},
-     			"HR": {
-     				"value": "4407000",
+     			"CROATIA": {
+     				"value": "Up to 90 Days",
      				"href" : "#",
      				"tooltip": {
      					"content": "<span style=\"font-weight:bold;\">Croatia<\/span><br \/>Population : 4407000"
@@ -620,8 +620,8 @@ $(document).ready(function() {
      					"content": "<span style=\"font-weight:bold;\">Jamaica<\/span><br \/>Population : 2709300"
      				}
      			},
-     			"JP": {
-     				"value": "127817277",
+     			"JAPAN": {
+     				"value": "Up to 90 Days",
      				"href" : "#",
      				"tooltip": {
      					"content": "<span style=\"font-weight:bold;\">Japan<\/span><br \/>Population : 127817277"
@@ -709,6 +709,13 @@ $(document).ready(function() {
      				"href" : "#",
      				"tooltip": {
      					"content": "<span style=\"font-weight:bold;\">Italy<\/span><br \/>Population : 60770000"
+     				}
+     			},
+                    "KOSOVO": {
+     				"value": "Up to 90 Days",
+     				"href" : "#",
+     				"tooltip": {
+     					"content": "<span style=\"font-weight:bold;\">Kosovo<\/span><br \/>Population : 16558459"
      				}
      			},
      			"KZ": {
@@ -809,8 +816,8 @@ $(document).ready(function() {
      					"content": "<span style=\"font-weight:bold;\">Luxembourg<\/span><br \/>Population : 517000"
      				}
      			},
-     			"MK": {
-     				"value": "2063893",
+     			"MACEDONIA": {
+     				"value": "Up to 90 Days",
      				"href" : "#",
      				"tooltip": {
      					"content": "<span style=\"font-weight:bold;\">Macedonia, The Former Yugoslav Republic Of<\/span><br \/>Population : 2063893"
@@ -893,8 +900,8 @@ $(document).ready(function() {
      					"content": "<span style=\"font-weight:bold;\">Micronesia, Federated States Of<\/span><br \/>Population : 111542"
      				}
      			},
-     			"MD": {
-     				"value": "3559000",
+     			"MOLDOVA": {
+     				"value": "Up to 90 Days",
      				"href" : "#",
      				"tooltip": {
      					"content": "<span style=\"font-weight:bold;\">Moldova, Republic Of<\/span><br \/>Population : 3559000"
@@ -914,8 +921,8 @@ $(document).ready(function() {
      					"content": "<span style=\"font-weight:bold;\">Mongolia<\/span><br \/>Population : 2800114"
      				}
      			},
-     			"ME": {
-     				"value": "632261",
+     			"MONTENEGRO": {
+     				"value": "Up to 90 Days",
      				"href" : "#",
      				"tooltip": {
      					"content": "<span style=\"font-weight:bold;\">Montenegro<\/span><br \/>Population : 632261"
@@ -1082,15 +1089,15 @@ $(document).ready(function() {
      					"content": "<span style=\"font-weight:bold;\">Dominican Republic<\/span><br \/>Population : 10056181"
      				}
      			},
-     			"RO": {
-     				"value": "21390000",
+     			"ROMANIA": {
+     				"value": "Up to 90 Days",
      				"href" : "#",
      				"tooltip": {
      					"content": "<span style=\"font-weight:bold;\">Romania<\/span><br \/>Population : 21390000"
      				}
      			},
-     			"GB": {
-     				"value": "62641000",
+     			"UNITED KINGDOM": {
+     				"value": "Up to 180 Days",
      				"href" : "#",
      				"tooltip": {
      					"content": "<span style=\"font-weight:bold;\">United Kingdom<\/span><br \/>Population : 62641000"
@@ -1166,8 +1173,8 @@ $(document).ready(function() {
      					"content": "<span style=\"font-weight:bold;\">Senegal<\/span><br \/>Population : 12767556"
      				}
      			},
-     			"RS": {
-     				"value": "7261000",
+     			"SERBIA": {
+     				"value": "Up to 90 Days",
      				"href" : "#",
      				"tooltip": {
      					"content": "<span style=\"font-weight:bold;\">Serbia<\/span><br \/>Population : 7261000"
@@ -1243,8 +1250,8 @@ $(document).ready(function() {
      					"content": "<span style=\"font-weight:bold;\">Sweden<\/span><br \/>Population : 9453000"
      				}
      			},
-     			"CH": {
-     				"value": "7907000",
+     			"SWITZERLAND": {
+     				"value": "Up to 90 Days",
      				"href" : "#",
      				"tooltip": {
      					"content": "<span style=\"font-weight:bold;\">Switzerland<\/span><br \/>Population : 7907000"
@@ -1383,8 +1390,8 @@ $(document).ready(function() {
      					"content": "<span style=\"font-weight:bold;\">Viet Nam<\/span><br \/>Population : 87840000"
      				}
      			},
-     			"UA": {
-     				"value": "45706100",
+     			"UKRAINE": {
+     				"value": "Up to 90 Days",
      				"href" : "#",
      				"tooltip": {
      					"content": "<span style=\"font-weight:bold;\">Ukraine<\/span><br \/>Population : 45706100"
