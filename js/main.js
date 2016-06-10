@@ -58,7 +58,7 @@ $(document).ready(function() {
      						attrs : {
      							fill : "#CBD0D3"
      						},
-     						label :"Country Data Pending (and U.S.A.)"
+     						label :"Country Data Pending"
      					},
      				]
      			},
