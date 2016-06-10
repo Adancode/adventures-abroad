@@ -19,16 +19,23 @@ $(document).ready(function() {
      				title :"Length of Stay Allowed Upon Arrival",
      				slices : [
                               {
+                                   value: "USA",
+     						attrs : {
+     							fill : "#6aafe1"
+     						},
+     						label :"U.S.A."
+     					},
+                              {
                                    value: "30 Days or Less",
      						attrs : {
-     							fill : "#D14233"
+     							fill : "#D7FC92"
      						},
      						label :"30 Days Or Less"
      					},
                               {
                                    value: "Up to 90 Days",
      						attrs : {
-     							fill : "#F1C40F"
+     							fill : "#7EE105"
      						},
      						label :"Up to 90 Days"
      					},
@@ -39,10 +46,17 @@ $(document).ready(function() {
      						},
      						label :"Up to 180 Days"
      					},
+                              {
+                                   value: "Complicated",
+     						attrs : {
+     							fill : "#D14233"
+     						},
+     						label :"More Complicated Process"
+     					},
      					{
      						max :5000000,
      						attrs : {
-     							fill : "#6aafe1"
+     							fill : "#CBD0D3"
      						},
      						label :"Country Data Pending (and U.S.A.)"
      					},
@@ -221,8 +235,8 @@ $(document).ready(function() {
      					"content": "<span style=\"font-weight:bold;\">Bhutan<\/span><br \/>Population : 738267"
      				}
      			},
-     			"BY": {
-     				"value": "9473000",
+     			"BELARUS": {
+     				"value": "Complicated",
      				"href" : "#",
      				"tooltip": {
      					"content": "<span style=\"font-weight:bold;\">Belarus<\/span><br \/>Population : 9473000"
@@ -375,15 +389,15 @@ $(document).ready(function() {
      					"content": "<span style=\"font-weight:bold;\">Congo, The Democratic Republic Of The<\/span><br \/>Population : 67757577"
      				}
      			},
-     			"KP": {
-     				"value": "24451285",
+     			"NORTH KOREA": {
+     				"value": "Complicated",
      				"href" : "#",
      				"tooltip": {
      					"content": "<span style=\"font-weight:bold;\">Korea, Democratic People's Republic Of<\/span><br \/>Population : 24451285"
      				}
      			},
-     			"KR": {
-     				"value": "49779000",
+     			"SOUTH KOREA": {
+     				"value": "30 Days or Less",
      				"href" : "#",
      				"tooltip": {
      					"content": "<span style=\"font-weight:bold;\">Korea, Republic Of<\/span><br \/>Population : 49779000"
@@ -480,8 +494,8 @@ $(document).ready(function() {
      					"content": "<span style=\"font-weight:bold;\">Estonia<\/span><br \/>Population : 1340000"
      				}
      			},
-     			"US": {
-     				"value": "311591917",
+     			"UNITED STATES OF AMERICA": {
+     				"value": "USA",
      				"href" : "#",
      				"tooltip": {
      					"content": "<span style=\"font-weight:bold;\">United States<\/span><br \/>Population : 311591917"
@@ -529,8 +543,8 @@ $(document).ready(function() {
      					"content": "<span style=\"font-weight:bold;\">Gambia<\/span><br \/>Population : 1776103"
      				}
      			},
-     			"GE": {
-     				"value": "4486000",
+     			"GEORGIA": {
+     				"value": "Up to 90 Days",
      				"href" : "#",
      				"tooltip": {
      					"content": "<span style=\"font-weight:bold;\">Georgia<\/span><br \/>Population : 4486000"
@@ -683,8 +697,8 @@ $(document).ready(function() {
      					"content": "<span style=\"font-weight:bold;\">Iraq<\/span><br \/>Population : 32961959"
      				}
      			},
-     			"IE": {
-     				"value": "4487000",
+     			"IRELAND": {
+     				"value": "Up to 90 Days",
      				"href" : "#",
      				"tooltip": {
      					"content": "<span style=\"font-weight:bold;\">Ireland<\/span><br \/>Population : 4487000"
@@ -718,8 +732,8 @@ $(document).ready(function() {
      					"content": "<span style=\"font-weight:bold;\">Kosovo<\/span><br \/>Population : 16558459"
      				}
      			},
-     			"KZ": {
-     				"value": "16558459",
+     			"KAZAKHSTAN": {
+     				"value": "30 Days or Less",
      				"href" : "#",
      				"tooltip": {
      					"content": "<span style=\"font-weight:bold;\">Kazakhstan<\/span><br \/>Population : 16558459"
@@ -914,8 +928,8 @@ $(document).ready(function() {
      					"content": "<span style=\"font-weight:bold;\">Monaco<\/span><br \/>Population : 35427"
      				}
      			},
-     			"MN": {
-     				"value": "2800114",
+     			"MONGOLIA": {
+     				"value": "Up to 90 Days",
      				"href" : "#",
      				"tooltip": {
      					"content": "<span style=\"font-weight:bold;\">Mongolia<\/span><br \/>Population : 2800114"
@@ -942,8 +956,8 @@ $(document).ready(function() {
      					"content": "<span style=\"font-weight:bold;\">Namibia<\/span><br \/>Population : 2324004"
      				}
      			},
-     			"NP": {
-     				"value": "30485798",
+     			"NEPAL": {
+     				"value": "Up to 180 Days",
      				"href" : "#",
      				"tooltip": {
      					"content": "<span style=\"font-weight:bold;\">Nepal<\/span><br \/>Population : 30485798"
@@ -1103,8 +1117,8 @@ $(document).ready(function() {
      					"content": "<span style=\"font-weight:bold;\">United Kingdom<\/span><br \/>Population : 62641000"
      				}
      			},
-     			"RU": {
-     				"value": "141930000",
+     			"RUSSIA": {
+     				"value": "Complicated",
      				"href" : "#",
      				"tooltip": {
      					"content": "<span style=\"font-weight:bold;\">Russian Federation<\/span><br \/>Population : 141930000"
@@ -1306,8 +1320,15 @@ $(document).ready(function() {
      					"content": "<span style=\"font-weight:bold;\">Czech Republic<\/span><br \/>Population : 10546000"
      				}
      			},
-     			"TH": {
-     				"value": "69518555",
+                    "TAIWAN": {
+     				"value": "30 Days or Less",
+     				"href" : "#",
+     				"tooltip": {
+     					"content": "<span style=\"font-weight:bold;\">TAIWAN<\/span><br \/>Population : 2324004"
+     				}
+     			},
+     			"THAILAND": {
+     				"value": "30 Days or Less",
      				"href" : "#",
      				"tooltip": {
      					"content": "<span style=\"font-weight:bold;\">Thailand<\/span><br \/>Population : 69518555"
@@ -1355,8 +1376,8 @@ $(document).ready(function() {
      					"content": "<span style=\"font-weight:bold;\">Turkmenistan<\/span><br \/>Population : 5105301"
      				}
      			},
-     			"TR": {
-     				"value": "73639596",
+     			"TURKEY": {
+     				"value": "Up to 90 Days",
      				"href" : "#",
      				"tooltip": {
      					"content": "<span style=\"font-weight:bold;\">Turkey<\/span><br \/>Population : 73639596"
@@ -1418,8 +1439,8 @@ $(document).ready(function() {
      					"content": "<span style=\"font-weight:bold;\">Zambia<\/span><br \/>Population : 13474959"
      				}
      			},
-     			"ZW": {
-     				"value": "12754378",
+     			"ZIMBABWE": {
+     				"value": "Up to 90 Days",
      				"href" : "#",
      				"tooltip": {
      					"content": "<span style=\"font-weight:bold;\">Zimbabwe<\/span><br \/>Population : 12754378"

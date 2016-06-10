@@ -1332,8 +1332,8 @@
 					, "stroke-linejoin" : "round"
 				}
 				, attrsHover : {
-					fill : "#f38a03"
-					, animDuration : 300
+					//fill : "#0F71FA"
+					//, animDuration : 300
 				}
 				, text : {
 					position : "inner"
