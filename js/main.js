@@ -30,7 +30,7 @@ $(document).ready(function() {
      						attrs : {
      							fill : "#D7FC92"
      						},
-     						label :"30 Days Or Less"
+     						label :"30 Days or Less"
      					},
                               {
                                    value: "31 to 90 Days",
@@ -88,8 +88,8 @@ $(document).ready(function() {
      					"content": "<span style=\"font-weight:bold;\">Somaliland<\/span><br \/>Population : 4500000"
      				}
      			},
-     			"ZA": {
-     				"value": "50586757",
+     			"SOUTH AFRICA": {
+     				"value": "31 to 90 Days",
      				"href" : "#",
      				"tooltip": {
      					"content": "<span style=\"font-weight:bold;\">South Africa<\/span><br \/>Population : 50586757"
@@ -102,8 +102,8 @@ $(document).ready(function() {
      					"content": "<span style=\"font-weight:bold;\">Albania<\/span><br \/>Population : 3215988"
      				}
      			},
-     			"DZ": {
-     				"value": "35980193",
+     			"ALGERIA": {
+     				"value": "Complicated",
      				"href" : "#",
      				"tooltip": {
      					"content": "<span style=\"font-weight:bold;\">Algeria<\/span><br \/>Population : 35980193"
@@ -263,8 +263,8 @@ $(document).ready(function() {
      					"content": "<span style=\"font-weight:bold;\">Bosnia And Herzegovina<\/span><br \/>Population : 3752228"
      				}
      			},
-     			"BW": {
-     				"value": "2030738",
+     			"BOTSWANA": {
+     				"value": "Complicated",
      				"href" : "#",
      				"tooltip": {
      					"content": "<span style=\"font-weight:bold;\">Botswana<\/span><br \/>Population : 2030738"
@@ -452,8 +452,8 @@ $(document).ready(function() {
      					"content": "<span style=\"font-weight:bold;\">Dominica<\/span><br \/>Population : 67675"
      				}
      			},
-     			"EG": {
-     				"value": "82536770",
+     			"EGYPT": {
+     				"value": "30 Days or Less",
      				"href" : "#",
      				"tooltip": {
      					"content": "<span style=\"font-weight:bold;\">Egypt<\/span><br \/>Population : 82536770"
@@ -774,8 +774,8 @@ $(document).ready(function() {
      					"content": "<span style=\"font-weight:bold;\">Lao People's Democratic Republic<\/span><br \/>Population : 6288037"
      				}
      			},
-     			"LS": {
-     				"value": "2193843",
+     			"LESOTHO": {
+     				"value": "Complicated",
      				"href" : "#",
      				"tooltip": {
      					"content": "<span style=\"font-weight:bold;\">Lesotho<\/span><br \/>Population : 2193843"
@@ -802,8 +802,8 @@ $(document).ready(function() {
      					"content": "<span style=\"font-weight:bold;\">Liberia<\/span><br \/>Population : 4128572"
      				}
      			},
-     			"LY": {
-     				"value": "6422772",
+     			"LIBYA": {
+     				"value": "Complicated",
      				"href" : "#",
      				"tooltip": {
      					"content": "<span style=\"font-weight:bold;\">Libya<\/span><br \/>Population : 6422772"
@@ -837,8 +837,8 @@ $(document).ready(function() {
      					"content": "<span style=\"font-weight:bold;\">Macedonia, The Former Yugoslav Republic Of<\/span><br \/>Population : 2063893"
      				}
      			},
-     			"MG": {
-     				"value": "21315135",
+     			"MADAGASCAR": {
+     				"value": "31 to 90 Days",
      				"href" : "#",
      				"tooltip": {
      					"content": "<span style=\"font-weight:bold;\">Madagascar<\/span><br \/>Population : 21315135"
@@ -879,8 +879,8 @@ $(document).ready(function() {
      					"content": "<span style=\"font-weight:bold;\">Malta<\/span><br \/>Population : 419000"
      				}
      			},
-     			"MA": {
-     				"value": "32272974",
+     			"MOROCCO": {
+     				"value": "31 to 90 Days",
      				"href" : "#",
      				"tooltip": {
      					"content": "<span style=\"font-weight:bold;\">Morocco<\/span><br \/>Population : 32272974"
@@ -949,8 +949,8 @@ $(document).ready(function() {
      					"content": "<span style=\"font-weight:bold;\">Mozambique<\/span><br \/>Population : 23929708"
      				}
      			},
-     			"NA": {
-     				"value": "2324004",
+     			"NAMIBIA": {
+     				"value": "Complicated",
      				"href" : "#",
      				"tooltip": {
      					"content": "<span style=\"font-weight:bold;\">Namibia<\/span><br \/>Population : 2324004"
@@ -1278,8 +1278,8 @@ $(document).ready(function() {
      					"content": "<span style=\"font-weight:bold;\">Suriname<\/span><br \/>Population : 529419"
      				}
      			},
-     			"SZ": {
-     				"value": "1067773",
+     			"SWAZILAND": {
+     				"value": "Complicated",
      				"href" : "#",
      				"tooltip": {
      					"content": "<span style=\"font-weight:bold;\">Swaziland<\/span><br \/>Population : 1067773"
@@ -1362,8 +1362,8 @@ $(document).ready(function() {
      					"content": "<span style=\"font-weight:bold;\">Trinidad And Tobago<\/span><br \/>Population : 1346350"
      				}
      			},
-     			"TN": {
-     				"value": "10673800",
+     			"TUNISIA": {
+     				"value": "91 to 180 Days",
      				"href" : "#",
      				"tooltip": {
      					"content": "<span style=\"font-weight:bold;\">Tunisia<\/span><br \/>Population : 10673800"
