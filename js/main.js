@@ -81,8 +81,8 @@ $(document).ready(function() {
      					"content": "<span style=\"font-weight:bold;\">South Africa<\/span><br \/>Population : 50586757"
      				}
      			},
-     			"AL": {
-     				"value": "3215988",
+     			"ALBANIA": {
+     				"value": "30 Days or Less",
      				"href" : "#",
      				"tooltip": {
      					"content": "<span style=\"font-weight:bold;\">Albania<\/span><br \/>Population : 3215988"
@@ -95,8 +95,8 @@ $(document).ready(function() {
      					"content": "<span style=\"font-weight:bold;\">Algeria<\/span><br \/>Population : 35980193"
      				}
      			},
-     			"DE": {
-     				"value": "81726000",
+     			"GERMANY": {
+     				"value": "Up to 90 Days",
      				"href" : "#",
      				"tooltip": {
      					"content": "<span style=\"font-weight:bold;\">Germany<\/span><br \/>Population : 81726000"
@@ -151,8 +151,8 @@ $(document).ready(function() {
      					"content": "<span style=\"font-weight:bold;\">Australia<\/span><br \/>Population : 22620600"
      				}
      			},
-     			"AT": {
-     				"value": "8419000",
+     			"AUSTRIA": {
+     				"value": "Up to 90 Days",
      				"href" : "#",
      				"tooltip": {
      					"content": "<span style=\"font-weight:bold;\">Austria<\/span><br \/>Population : 8419000"
@@ -165,8 +165,8 @@ $(document).ready(function() {
      					"content": "<span style=\"font-weight:bold;\">Azerbaijan<\/span><br \/>Population : 9168000"
      				}
      			},
-     			"BS": {
-     				"value": "347176",
+     			"BAHAMAS": {
+     				"value": "30 Days or Less",
      				"href" : "#",
      				"tooltip": {
      					"content": "<span style=\"font-weight:bold;\">Bahamas<\/span><br \/>Population : 347176"
@@ -193,15 +193,15 @@ $(document).ready(function() {
      					"content": "<span style=\"font-weight:bold;\">Barbados<\/span><br \/>Population : 273925"
      				}
      			},
-     			"BE": {
-     				"value": "11008000",
+     			"BELGIUM": {
+     				"value": "Up to 90 Days",
      				"href" : "#",
      				"tooltip": {
      					"content": "<span style=\"font-weight:bold;\">Belgium<\/span><br \/>Population : 11008000"
      				}
      			},
-     			"BZ": {
-     				"value": "356600",
+     			"BELIZE": {
+     				"value": "30 Days or Less",
      				"href" : "#",
      				"tooltip": {
      					"content": "<span style=\"font-weight:bold;\">Belize<\/span><br \/>Population : 356600"
@@ -389,8 +389,8 @@ $(document).ready(function() {
      					"content": "<span style=\"font-weight:bold;\">Korea, Republic Of<\/span><br \/>Population : 49779000"
      				}
      			},
-     			"CR": {
-     				"value": "4726575",
+     			"COSTA RICA": {
+     				"value": "Up to 90 Days",
      				"href" : "#",
      				"tooltip": {
      					"content": "<span style=\"font-weight:bold;\">Costa Rica<\/span><br \/>Population : 4726575"
@@ -466,15 +466,15 @@ $(document).ready(function() {
      					"content": "<span style=\"font-weight:bold;\">Eritrea<\/span><br \/>Population : 5415280"
      				}
      			},
-     			"ES": {
-     				"value": "46235000",
+     			"SPAIN": {
+     				"value": "Up to 90 Days",
      				"href" : "#",
      				"tooltip": {
      					"content": "<span style=\"font-weight:bold;\">Spain<\/span><br \/>Population : 46235000"
      				}
      			},
-     			"EE": {
-     				"value": "1340000",
+     			"ESTONIA": {
+     				"value": "Up to 90 Days",
      				"href" : "#",
      				"tooltip": {
      					"content": "<span style=\"font-weight:bold;\">Estonia<\/span><br \/>Population : 1340000"
@@ -501,15 +501,15 @@ $(document).ready(function() {
      					"content": "<span style=\"font-weight:bold;\">Fiji<\/span><br \/>Population : 868406"
      				}
      			},
-     			"FI": {
-     				"value": "5387000",
+     			"FINLAND": {
+     				"value": "Up to 90 Days",
      				"href" : "#",
      				"tooltip": {
      					"content": "<span style=\"font-weight:bold;\">Finland<\/span><br \/>Population : 5387000"
      				}
      			},
-     			"FR": {
-     				"value": "65436552",
+     			"FRANCE": {
+     				"value": "Up to 90 Days",
      				"href" : "#",
      				"tooltip": {
      					"content": "<span style=\"font-weight:bold;\">France<\/span><br \/>Population : 65436552"
@@ -543,8 +543,8 @@ $(document).ready(function() {
      					"content": "<span style=\"font-weight:bold;\">Ghana<\/span><br \/>Population : 24965816"
      				}
      			},
-     			"GR": {
-     				"value": "11304000",
+     			"GREECE": {
+     				"value": "Up to 90 Days",
      				"href" : "#",
      				"tooltip": {
      					"content": "<span style=\"font-weight:bold;\">Greece<\/span><br \/>Population : 11304000"
@@ -557,8 +557,8 @@ $(document).ready(function() {
      					"content": "<span style=\"font-weight:bold;\">Grenada<\/span><br \/>Population : 104890"
      				}
      			},
-     			"GT": {
-     				"value": "14757316",
+     			"GUATEMALA": {
+     				"value": "Up to 90 Days",
      				"href" : "#",
      				"tooltip": {
      					"content": "<span style=\"font-weight:bold;\">Guatemala<\/span><br \/>Population : 14757316"
@@ -585,36 +585,36 @@ $(document).ready(function() {
      					"content": "<span style=\"font-weight:bold;\">Guinea-bissau<\/span><br \/>Population : 1547061"
      				}
      			},
-     			"GY": {
-     				"value": "756040",
+     			"GUYANA": {
+     				"value": "Up to 90 Days",
      				"href" : "#",
      				"tooltip": {
      					"content": "<span style=\"font-weight:bold;\">Guyana<\/span><br \/>Population : 756040"
      				}
      			},
-     			"HT": {
-     				"value": "10123787",
+     			"HAITI": {
+     				"value": "Up to 90 Days",
      				"href" : "#",
      				"tooltip": {
      					"content": "<span style=\"font-weight:bold;\">Haiti<\/span><br \/>Population : 10123787"
      				}
      			},
-     			"HN": {
-     				"value": "7754687",
+     			"HONDURAS": {
+     				"value": "Up to 90 Days",
      				"href" : "#",
      				"tooltip": {
      					"content": "<span style=\"font-weight:bold;\">Honduras<\/span><br \/>Population : 7754687"
      				}
      			},
-     			"HU": {
-     				"value": "9971000",
+     			"HUNGARY": {
+     				"value": "Up to 90 Days",
      				"href" : "#",
      				"tooltip": {
      					"content": "<span style=\"font-weight:bold;\">Hungary<\/span><br \/>Population : 9971000"
      				}
      			},
-     			"JM": {
-     				"value": "2709300",
+     			"JAMAICA": {
+     				"value": "Up to 180 Days",
      				"href" : "#",
      				"tooltip": {
      					"content": "<span style=\"font-weight:bold;\">Jamaica<\/span><br \/>Population : 2709300"
@@ -690,8 +690,8 @@ $(document).ready(function() {
      					"content": "<span style=\"font-weight:bold;\">Ireland<\/span><br \/>Population : 4487000"
      				}
      			},
-     			"IS": {
-     				"value": "319000",
+     			"ICELAND": {
+     				"value": "Up to 90 Days",
      				"href" : "#",
      				"tooltip": {
      					"content": "<span style=\"font-weight:bold;\">Iceland<\/span><br \/>Population : 319000"
@@ -704,8 +704,8 @@ $(document).ready(function() {
      					"content": "<span style=\"font-weight:bold;\">Israel<\/span><br \/>Population : 7765700"
      				}
      			},
-     			"IT": {
-     				"value": "60770000",
+     			"ITALY": {
+     				"value": "Up to 90 Days",
      				"href" : "#",
      				"tooltip": {
      					"content": "<span style=\"font-weight:bold;\">Italy<\/span><br \/>Population : 60770000"
@@ -760,8 +760,8 @@ $(document).ready(function() {
      					"content": "<span style=\"font-weight:bold;\">Lesotho<\/span><br \/>Population : 2193843"
      				}
      			},
-     			"LV": {
-     				"value": "2220000",
+     			"LATVIA": {
+     				"value": "Up to 90 Days",
      				"href" : "#",
      				"tooltip": {
      					"content": "<span style=\"font-weight:bold;\">Latvia<\/span><br \/>Population : 2220000"
@@ -795,15 +795,15 @@ $(document).ready(function() {
      					"content": "<span style=\"font-weight:bold;\">Liechtenstein<\/span><br \/>Population : 36304"
      				}
      			},
-     			"LT": {
-     				"value": "3203000",
+     			"LITHUANIA": {
+     				"value": "Up to 90 Days",
      				"href" : "#",
      				"tooltip": {
      					"content": "<span style=\"font-weight:bold;\">Lithuania<\/span><br \/>Population : 3203000"
      				}
      			},
-     			"LU": {
-     				"value": "517000",
+     			"LUXEMBOURG": {
+     				"value": "Up to 90 Days",
      				"href" : "#",
      				"tooltip": {
      					"content": "<span style=\"font-weight:bold;\">Luxembourg<\/span><br \/>Population : 517000"
@@ -942,8 +942,8 @@ $(document).ready(function() {
      					"content": "<span style=\"font-weight:bold;\">Nepal<\/span><br \/>Population : 30485798"
      				}
      			},
-     			"NI": {
-     				"value": "5869859",
+     			"NICARAGUA": {
+     				"value": "Up to 90 Days",
      				"href" : "#",
      				"tooltip": {
      					"content": "<span style=\"font-weight:bold;\">Nicaragua<\/span><br \/>Population : 5869859"
@@ -963,8 +963,8 @@ $(document).ready(function() {
      					"content": "<span style=\"font-weight:bold;\">Nigeria<\/span><br \/>Population : 162470737"
      				}
      			},
-     			"NO": {
-     				"value": "4952000",
+     			"NORWAY": {
+     				"value": "Up to 90 Days",
      				"href" : "#",
      				"tooltip": {
      					"content": "<span style=\"font-weight:bold;\">Norway<\/span><br \/>Population : 4952000"
@@ -1012,8 +1012,8 @@ $(document).ready(function() {
      					"content": "<span style=\"font-weight:bold;\">Palestine, State Of<\/span><br \/>Population : 4019433"
      				}
      			},
-     			"PA": {
-     				"value": "3571185",
+     			"PANAMA": {
+     				"value": "30 Days or Less",
      				"href" : "#",
      				"tooltip": {
      					"content": "<span style=\"font-weight:bold;\">Panama<\/span><br \/>Population : 3571185"
@@ -1033,8 +1033,8 @@ $(document).ready(function() {
      					"content": "<span style=\"font-weight:bold;\">Paraguay<\/span><br \/>Population : 6568290"
      				}
      			},
-     			"NL": {
-     				"value": "16696000",
+     			"NETHERLANDS": {
+     				"value": "Up to 90 Days",
      				"href" : "#",
      				"tooltip": {
      					"content": "<span style=\"font-weight:bold;\">Netherlands<\/span><br \/>Population : 16696000"
@@ -1054,15 +1054,15 @@ $(document).ready(function() {
      					"content": "<span style=\"font-weight:bold;\">Philippines<\/span><br \/>Population : 94852030"
      				}
      			},
-     			"PL": {
-     				"value": "38216000",
+     			"POLAND": {
+     				"value": "Up to 90 Days",
      				"href" : "#",
      				"tooltip": {
      					"content": "<span style=\"font-weight:bold;\">Poland<\/span><br \/>Population : 38216000"
      				}
      			},
-     			"PT": {
-     				"value": "10637000",
+     			"PORTUGAL": {
+     				"value": "Up to 90 Days",
      				"href" : "#",
      				"tooltip": {
      					"content": "<span style=\"font-weight:bold;\">Portugal<\/span><br \/>Population : 10637000"
@@ -1075,8 +1075,8 @@ $(document).ready(function() {
      					"content": "<span style=\"font-weight:bold;\">Qatar<\/span><br \/>Population : 1870041"
      				}
      			},
-     			"DO": {
-     				"value": "10056181",
+     			"DOMINICAN REPUBLIC": {
+     				"value": "30 Days or Less",
      				"href" : "#",
      				"tooltip": {
      					"content": "<span style=\"font-weight:bold;\">Dominican Republic<\/span><br \/>Population : 10056181"
@@ -1138,8 +1138,8 @@ $(document).ready(function() {
      					"content": "<span style=\"font-weight:bold;\">Saint Lucia<\/span><br \/>Population : 176000"
      				}
      			},
-     			"SV": {
-     				"value": "6227491",
+     			"EL SALVADOR": {
+     				"value": "Up to 90 Days",
      				"href" : "#",
      				"tooltip": {
      					"content": "<span style=\"font-weight:bold;\">El Salvador<\/span><br \/>Population : 6227491"
@@ -1194,15 +1194,15 @@ $(document).ready(function() {
      					"content": "<span style=\"font-weight:bold;\">Singapore<\/span><br \/>Population : 5183700"
      				}
      			},
-     			"SK": {
-     				"value": "5440000",
+     			"SLOVAKIA": {
+     				"value": "Up to 90 Days",
      				"href" : "#",
      				"tooltip": {
      					"content": "<span style=\"font-weight:bold;\">Slovakia<\/span><br \/>Population : 5440000"
      				}
      			},
-     			"SI": {
-     				"value": "2052000",
+     			"SLOVENIA": {
+     				"value": "Up to 90 Days",
      				"href" : "#",
      				"tooltip": {
      					"content": "<span style=\"font-weight:bold;\">Slovenia<\/span><br \/>Population : 2052000"
@@ -1236,8 +1236,8 @@ $(document).ready(function() {
      					"content": "<span style=\"font-weight:bold;\">Sri Lanka<\/span><br \/>Population : 20869000"
      				}
      			},
-     			"SE": {
-     				"value": "9453000",
+     			"SWEDEN": {
+     				"value": "Up to 90 Days",
      				"href" : "#",
      				"tooltip": {
      					"content": "<span style=\"font-weight:bold;\">Sweden<\/span><br \/>Population : 9453000"
@@ -1250,8 +1250,8 @@ $(document).ready(function() {
      					"content": "<span style=\"font-weight:bold;\">Switzerland<\/span><br \/>Population : 7907000"
      				}
      			},
-     			"SR": {
-     				"value": "529419",
+     			"SURINAME": {
+     				"value": "Up to 90 Days",
      				"href" : "#",
      				"tooltip": {
      					"content": "<span style=\"font-weight:bold;\">Suriname<\/span><br \/>Population : 529419"
@@ -1292,8 +1292,8 @@ $(document).ready(function() {
      					"content": "<span style=\"font-weight:bold;\">Chad<\/span><br \/>Population : 11525496"
      				}
      			},
-     			"CZ": {
-     				"value": "10546000",
+     			"CZECH REPUBLIC": {
+     				"value": "Up to 90 Days",
      				"href" : "#",
      				"tooltip": {
      					"content": "<span style=\"font-weight:bold;\">Czech Republic<\/span><br \/>Population : 10546000"
@@ -1327,8 +1327,8 @@ $(document).ready(function() {
      					"content": "<span style=\"font-weight:bold;\">Tonga<\/span><br \/>Population : 104509"
      				}
      			},
-     			"TT": {
-     				"value": "1346350",
+     			"TRINIDAD AND TOBAGO": {
+     				"value": "Up to 90 Days",
      				"href" : "#",
      				"tooltip": {
      					"content": "<span style=\"font-weight:bold;\">Trinidad And Tobago<\/span><br \/>Population : 1346350"
