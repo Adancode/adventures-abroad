@@ -1452,7 +1452,40 @@ $(document).ready(function() {
 
 $(document).on("click", "path", function(){
     console.log($(this).attr("data-id"));
+
 });
 
+     // On Click button associated with the Search Button
+     $(document).on('click', 'path', function(){
+          var searchTerm = $(this).attr("data-id");
+     	// Empties the region associated with the articles
+     	$("#searchNews").empty();
+          $("#searchNews").append("<h3>Current News for " + capitalizeFirstLetter(searchTerm.toLowerCase()) + "</h3>");
+     	// Search Term
+
+
+          var url = "https://api.nytimes.com/svc/search/v2/articlesearch.json";
+          url += '?' + $.param({
+            'api-key': "b9f91d369ff59547cd47b931d8cbc56b:0:74623931",
+            'q': searchTerm,
+            'sort': "newest"
+          });
+          $.ajax({
+            url: url,
+            method: 'GET',
+          }).done(function(result) {
+               for (var i = 0; i < result.response.docs.length; i++) {
+                    $("#searchNews").append("<p><a href=" + "'" + result.response.docs[i].web_url + "'" + " target='_blank' ></p>" + result.response.docs[i].snippet + "</p>");
+                    console.log(i);
+               }
+               console.log(result.response.docs[0]);
+          }).fail(function(err) {
+            throw err;
+          });
+     });
 
 }); // Closes jQuery
+
+function capitalizeFirstLetter(string) {
+    return string.charAt(0).toUpperCase() + string.slice(1);
+}
