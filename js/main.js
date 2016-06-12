@@ -1167,10 +1167,10 @@ $(document).ready(function() {
      				}
      			},
      			"WS": {
-     				"value": "183874",
+     				"value": "513200",
      				"href" : "#",
      				"tooltip": {
-     					"content": "<span style=\"font-weight:bold;\">Samoa<\/span><br \/>Population : 183874"
+     					"content": "<span style=\"font-weight:bold;\">Western Sahara<\/span><br \/>Population : 513200"
      				}
      			},
      			"ST": {
