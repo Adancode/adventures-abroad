@@ -1461,7 +1461,7 @@ $(document).on("click", "path", function(){
           if (searchTerm.length > 2) {
      	// Empties the region associated with the articles
      	$("#searchNews").empty();
-          $("#searchNews").append("<h3>Current News for " + capitalizeFirstLetter(searchTerm.toLowerCase()) + "</h3>");
+          $("#searchNews").append("<h3>Current News for " + toTitleCase(searchTerm.toLowerCase()) + "</h3>");
      	// Search Term
 
 
@@ -1488,6 +1488,7 @@ $(document).on("click", "path", function(){
 
 }); // Closes jQuery
 
-function capitalizeFirstLetter(string) {
-    return string.charAt(0).toUpperCase() + string.slice(1);
+function toTitleCase(str)
+{
+    return str.replace(/\w\S*/g, function(txt){return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();});
 }
