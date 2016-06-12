@@ -1458,6 +1458,7 @@ $(document).on("click", "path", function(){
      // On Click button associated with the Search Button
      $(document).on('click', 'path', function(){
           var searchTerm = $(this).attr("data-id");
+          if (searchTerm.length > 2) {
      	// Empties the region associated with the articles
      	$("#searchNews").empty();
           $("#searchNews").append("<h3>Current News for " + capitalizeFirstLetter(searchTerm.toLowerCase()) + "</h3>");
@@ -1481,7 +1482,8 @@ $(document).on("click", "path", function(){
                console.log(result.response.docs[0]);
           }).fail(function(err) {
             throw err;
-          });
+       });
+ }  // Close if statement (eliminates pending African countries)
      });
 
 }); // Closes jQuery
