@@ -655,8 +655,8 @@ $(document).ready(function() {
      					"content": "<span style=\"font-weight:bold;\">Palau<\/span><br \/>Population : 20609"
      				}
      			},
-     			"SB": {
-     				"value": "552267",
+     			"SOLOMON ISLANDS": {
+     				"value": "31 to 90 Days",
      				"href" : "#",
      				"tooltip": {
      					"content": "<span style=\"font-weight:bold;\">Solomon Islands<\/span><br \/>Population : 552267"
@@ -1390,8 +1390,8 @@ $(document).ready(function() {
      					"content": "<span style=\"font-weight:bold;\">Tuvalu<\/span><br \/>Population : 9847"
      				}
      			},
-     			"VU": {
-     				"value": "245619",
+     			"VANUATU": {
+     				"value": "30 Days or Less",
      				"href" : "#",
      				"tooltip": {
      					"content": "<span style=\"font-weight:bold;\">Vanuatu<\/span><br \/>Population : 245619"
@@ -1477,9 +1477,8 @@ $(document).on("click", "path", function(){
           }).done(function(result) {
                for (var i = 0; i < result.response.docs.length; i++) {
                     $("#searchNews").append("<p><a href=" + "'" + result.response.docs[i].web_url + "'" + " target='_blank' ></p>" + result.response.docs[i].snippet + "</p>");
-                    console.log(i);
                }
-               console.log(result.response.docs[0]);
+
           }).fail(function(err) {
             throw err;
        });
