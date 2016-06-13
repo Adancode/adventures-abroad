@@ -14,3 +14,17 @@
      padding : 10px;
      z-index: 1000;
 }
+
+@font-face {
+     font-family: "Travel Diary";
+     src: url('css/travel_diary_feb26.ttf');
+}
+
+h1 {
+     font-family: "Travel Diary";
+}
+
+body {
+     background: url('../img/subtlenet2.png');
+     background-repeat: repeat;
+}
