@@ -1480,6 +1480,7 @@ $(document).on("click", "path", function(){
           $('<td>').appendTo(".tableRow").addClass("tableHeader").text("Comment");
 
           $('#submit-comment').on("click", function(){
+
                var myObj = {};
 
                var newName = $('#name-input').val();
@@ -1489,12 +1490,21 @@ $(document).on("click", "path", function(){
                myObj[newName] = newComment; // {llove: "Allen"}
 
                newFbComment.update(myObj);
+               $('#name-input').val('');
+               $('#comment-input').val('');
           });
 
           dataRef.on("value", function(snapshot){
-
                var data = snapshot.val();
+               $('#commentTable').empty();
+               $('#commentTable').addClass("panel panel-primary");
+               $('<div>').appendTo('#commentTable').addClass("panel-heading").addClass('user-comments-title').text("User Comments");
+               $('<table>').appendTo('#commentTable').addClass("table");
+               $('.table > tbody').append("<tr><td>" + 'User Name' + "</td><td>" + 'Country Selected' + "</td></tr>");
 
+               $('<tr>').appendTo(".table").addClass("tableRow");
+               $('<td>').appendTo(".tableRow").addClass("tableHeader").text("Name");
+               $('<td>').appendTo(".tableRow").addClass("tableHeader").text("Comment");
                for(var prop in data){
                     if(prop == searchTerm) {
                          countrySelected = data[prop];
@@ -1557,12 +1567,7 @@ $(document).on("click", "path", function(){
 
 }); // Closes jQuery
 
-$('#commentSubmit').on("click", function(){
 
-     var newName = $('#name-input').val();
-     var newComment = $('#comment-input').val();
-     return false;
-});
 
 
 function toTitleCase(str)
