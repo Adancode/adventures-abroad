@@ -15,6 +15,7 @@
      z-index: 1000;
 }
 
+
 @font-face {
      font-family: "Travel Diary";
      src: url('travel_diary_feb26.ttf');
@@ -27,6 +28,54 @@ h1 {
 }
 
 body {
-     background: url('../img/subtlenet2.png');
-     background-repeat: repeat;
+    background-color: #4183D7;
+}
+
+.newsItems {
+     color: black;
+     font-size: 20px;
+}
+
+#searchNews {
+     border: 4px solid white;
+     margin-top: 20px;
+     background-color: white;
+     margin-bottom: 40px;
+     border-radius: 4px;
+}
+
+.newsTitle {
+     margin-top: 40px;
+     margin-bottom: 30px;
+     color: white;
+}
+
+.mainTitle {
+     font-size: 50px;
+     color: white;
+}
+
+div.areaLegend {
+     color: white;
+}
+
+#commentTable {
+     padding-left: 20px;
+}
+
+.user-comments-title {
+     padding-left: 30px;
+}
+
+.panel-primary {
+     margin-top: 30px;
+}
+
+div.user-comments-title {
+     margin-left: -20px;
+}
+
+#searchNews, #userComments {
+     padding-left: 20px;
+     padding-right: 20px;
 }
