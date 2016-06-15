@@ -1539,7 +1539,7 @@ $(document).on("click", "path", function(){
           if (searchTerm.length > 2) {
      	// Empties the region associated with the articles
      	$("#searchNews").empty();
-          $("#searchNews").append("<h3>Current News for " + toTitleCase(searchTerm.toLowerCase()) + "</h3><hr>");
+          $("#searchNews").append("<h3 class='newsTitle'>Current News for " + toTitleCase(searchTerm.toLowerCase()) + "</h3><hr>");
      	// Search Term
 
 
@@ -1555,7 +1555,6 @@ $(document).on("click", "path", function(){
           }).done(function(result) {
                for (var i = 0; i < result.response.docs.length; i++) {
                     $("#searchNews").append("<p><a href=" + "'" + result.response.docs[i].web_url + "'" + " target='_blank' ></p>" + result.response.docs[i].snippet + "</p>");
-
                }
 
           }).fail(function(err) {
