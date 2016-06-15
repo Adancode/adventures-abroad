@@ -51,7 +51,7 @@ $(document).ready(function() {
      						attrs : {
      							fill : "#D14233"
      						},
-     						label :"More Complicated Process"
+     						label :"Procedural or Other Complications"
      					},
      					{
      						max :5000000,
@@ -1398,7 +1398,7 @@ $(document).ready(function() {
      				}
      			},
      			"VENEZUELA": {
-     				"value": "31 to 90 Days",
+     				"value": "Complicated",
      				"href" : "#",
      				"tooltip": {
      					"content": "<span style=\"font-weight:bold;\">Venezuela, Bolivarian Republic Of<\/span><br \/>Population : 29278000"
@@ -1462,10 +1462,10 @@ $(document).on("click", "path", function(){
           $('#commentTable').empty();
           $('#userComments').empty();
 
-          $('#userComments').append("<form role='form'><div class='form-group'><label for='text'>Name</label>" +
-         "<input type='text' class='form-control' id='name-input'></div>" +
+          $('#userComments').append("<form name='myForm' role='form'><div class='form-group'><label for='text'>Name</label>" +
+         "<input type='text' class='form-control' id='name-input' name='fname'></div>" +
          "<div class='form-group'><label for='text'>Comment on " + toTitleCase(searchTerm) + "!</label>" +
-         "<input type='text' class='form-control' id='comment-input'></div>" +
+         "<input type='text' class='form-control' id='comment-input' name='fcomment'></div>" +
          "</form>" +
          "<button type='submit' class='btn btn-primary' id='submit-comment'>Submit</button>");
 
@@ -1480,7 +1480,8 @@ $(document).on("click", "path", function(){
           $('<td>').appendTo(".tableRow").addClass("tableHeader").text("Comment");
 
           $('#submit-comment').on("click", function(){
-
+               var isValidated = validateForm();  // additional code
+               if (isValidated === true) {  // additional code
                var myObj = {};
 
                var newName = $('#name-input').val();
@@ -1492,6 +1493,10 @@ $(document).on("click", "path", function(){
                newFbComment.update(myObj);
                $('#name-input').val('');
                $('#comment-input').val('');
+
+          }  // closes if isValidated
+
+
           });
 
           dataRef.on("value", function(snapshot){
@@ -1521,7 +1526,6 @@ $(document).on("click", "path", function(){
 
           // MY CODE TO BE INSERTED INTO ADAMS
          dataRef.on("value", function(snapshot){
-
 
           var data = snapshot.val();
 
@@ -1576,4 +1580,20 @@ function toTitleCase(str)
 
 function scrollDown() {
           window.scroll(0, 40);
+}
+
+function validateForm() {
+    var x = document.forms["myForm"]["fname"].value;
+    var y = document.forms["myForm"]["fcomment"].value;
+    if (x == null || x == "") {
+        alert("Please fill out every field.");
+        return false;
+    }
+    else if (y == null || y == "") {
+        alert("Please fill out every field.");
+        return false;
+    }
+    else {
+         return true;
+    }
 }
