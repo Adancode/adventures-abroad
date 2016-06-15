@@ -3,19 +3,20 @@
     <head>
 
         <meta charset="utf-8">
-        <title>Generic Title</title>
+        <title>Travel The World</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
         <link rel="stylesheet" href="css/main.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
         <script type = "text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
-        <script type = "text/javascript" src="https://cdn.rawgit.com/DmitryBaranovskiy/raphael/v2.1.4/raphael-min.js"></script>
-        <script type = "text/javascript" src="https://cdn.rawgit.com/neveldo/jQuery-Mapael/1.1.0/js/jquery.mapael.js"></script>
-        <script type = "text/javascript" src="https://cdn.rawgit.com/neveldo/jQuery-Mapael/1.1.0/js/maps/world_countries.js"></script>
+        <script type = "text/javascript" src="js/raphael.js"></script>
+        <script type = "text/javascript" src="js/mapael.js"></script>
+        <script type = "text/javascript" src="js/mapaelworldmap.js"></script>
+        <script src="https://cdn.firebase.com/js/client/2.4.1/firebase.js"></script>
     </head>
     <body>
-    <h1> Adam's Adventures Abroad</h1>
+    <h1>American-Friendly Travel Destinations</h1>
     <!-- Main jumbotron for a primary marketing message or call to action -->
     <div class="container">
 		<div class="mapcontainer">
@@ -26,10 +27,24 @@
 				<span>Alternative content for the legend</span>
 			</div>
 			<div class="plotLegend">
-				<span>Alternative content for the legend</span>
+				<span></span>
 			</div>
 		</div>
      </div>
+
+     <!-- INPUT AND DISPLAY OF USER COMMENTS -->
+     <div id = "userComments">
+        
+        
+    </div>
+
+    <div id = "commentTable">
+    </div>
+
+     <!-- DISPLAY OF GOOGLE APIS -->
+     <div id="searchNews">
+     </div>
+
 
         <script src="js/main.js"></script>
     </body>

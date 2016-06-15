@@ -4,13 +4,18 @@
    Author's custom styles
    ========================================================================== */
 
-   .mapTooltip {
-   			position : fixed;
-   			background-color : #fff;
-   			moz-opacity:0.70;
-   			opacity: 0.70;
-   			filter:alpha(opacity=70);
-   			border-radius:10px;
-   			padding : 10px;
-   			z-index: 1000;
-          }
+.mapTooltip {
+     position: fixed;
+     background-color : #fff;
+     moz-opacity:0.70;
+     opacity: 0.70;
+     filter:alpha(opacity=70);
+     border-radius:10px;
+     padding : 10px;
+     z-index: 1000;
+}
+
+
+.panel-primary {
+    margin-top: 5px;
+}
