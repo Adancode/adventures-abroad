@@ -655,8 +655,8 @@ $(document).ready(function() {
      					"content": "<span style=\"font-weight:bold;\">Palau<\/span><br \/>Population : 20609"
      				}
      			},
-     			"SOLOMON ISLANDS": {
-     				"value": "31 to 90 Days",
+     			"SB": {
+     				"value": "552267",
      				"href" : "#",
      				"tooltip": {
      					"content": "<span style=\"font-weight:bold;\">Solomon Islands<\/span><br \/>Population : 552267"
@@ -1390,8 +1390,8 @@ $(document).ready(function() {
      					"content": "<span style=\"font-weight:bold;\">Tuvalu<\/span><br \/>Population : 9847"
      				}
      			},
-     			"VANUATU": {
-     				"value": "30 Days or Less",
+     			"VU": {
+     				"value": "245619",
      				"href" : "#",
      				"tooltip": {
      					"content": "<span style=\"font-weight:bold;\">Vanuatu<\/span><br \/>Population : 245619"
@@ -1458,6 +1458,82 @@ $(document).on("click", "path", function(){
      // On Click button associated with the Search Button
      $(document).on('click', 'path', function(){
           var searchTerm = $(this).attr("data-id");
+          //console.log(searchTerm);
+          $('#commentTable').empty();
+          $('#userComments').empty();
+
+          $('#userComments').append("<form role='form'><div class='form-group'><label for='text'>Name</label>" +
+         "<input type='text' class='form-control' id='name-input'></div>" +
+         "<div class='form-group'><label for='text'>Comment on " + toTitleCase(searchTerm) + "!</label>" +
+         "<input type='text' class='form-control' id='comment-input'></div>" +
+         "</form>" +
+         "<button type='submit' class='btn btn-primary' id='submit-comment'>Submit Your Comment To View Comments From Other Users!</button>");
+
+          // CODE TO DYNAMICALLY GENERATE THE COMMENTS TABLE
+          $('#commentTable').addClass("panel panel-primary");
+          $('<div>').appendTo('#commentTable').addClass("panel-heading").text("User Comments");
+          $('<table>').appendTo('#commentTable').addClass("table");
+          $('.table > tbody').append("<tr><td>" + 'User Name' + "</td><td>" + 'Country Selected' + "</td></tr>");
+
+          $('<tr>').appendTo(".table").addClass("tableRow");
+          $('<td>').appendTo(".tableRow").addClass("tableHeader").text("Name");
+          $('<td>').appendTo(".tableRow").addClass("tableHeader").text("Comment");
+          
+          $('#submit-comment').on("click", function(){
+               var myObj = {};
+               //console.log(this);
+               var newName = $('#name-input').val();
+               var newComment = $('#comment-input').val();
+               //console.log(newName);
+               //console.log(newComment);
+               //return false;
+
+               var newFbComment = dataRef.child(searchTerm);
+               myObj[newName] = newComment; // {llove: "Allen"}
+               console.log(myObj)
+               newFbComment.update(myObj);
+          });
+
+          dataRef.on("value", function(snapshot){
+               // console.log(snapshot.val());
+               var data = snapshot.val();
+               //console.log(data);
+               for(var prop in data){
+                    if(prop == searchTerm) {
+                         countrySelected = data[prop];
+                         // console.log(countrySelected);
+
+                         for (var userName in countrySelected) {
+                              //console.log(userName, countrySelected[userName]);
+                              $('.table > tbody').append("<tr><td>" + userName + "</td><td>" + countrySelected[userName] + "</td></tr>");
+                         }
+                         // var names = Object.keys(countrySelected);
+                         // console.log(Object.values(countrySelected));
+                         // for(var i = 0; i < 5; i++) {
+                         //      //console.log(names);
+                         // };
+                    };
+               };
+          });
+
+          // MY CODE TO BE INSERTED INTO ADAMS
+         dataRef.on("value", function(snapshot){
+          //console.log(snapshot.val()); 
+               
+          var data = snapshot.val();
+               //console.log(data);
+               for (var prop in data) {
+                    // console.log("Obj.= " + prop + "=" + data[prop]);
+                    if(prop == searchTerm) {
+                         countrySelected = data[prop];
+                         //console.log(countrySelected);
+                         console.log(Object.keys(countrySelected));
+                    };
+               };            
+          }); 
+
+          // END OF MY CODE
+          
           if (searchTerm.length > 2) {
      	// Empties the region associated with the articles
      	$("#searchNews").empty();
@@ -1477,8 +1553,9 @@ $(document).on("click", "path", function(){
           }).done(function(result) {
                for (var i = 0; i < result.response.docs.length; i++) {
                     $("#searchNews").append("<p><a href=" + "'" + result.response.docs[i].web_url + "'" + " target='_blank' ></p>" + result.response.docs[i].snippet + "</p>");
+                    console.log(i);
                }
-
+               console.log(result.response.docs[0]);
           }).fail(function(err) {
             throw err;
        });
@@ -1487,7 +1564,17 @@ $(document).on("click", "path", function(){
 
 }); // Closes jQuery
 
+$('#commentSubmit').on("click", function(){
+     //console.log(this);
+     var newName = $('#name-input').val();
+     var newComment = $('#comment-input').val();
+     console.log(newName);
+     console.log(newComment);
+     return false;
+});
+
+
 function toTitleCase(str)
 {
     return str.replace(/\w\S*/g, function(txt){return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();});
-}
+};
