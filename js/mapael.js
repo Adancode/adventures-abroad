@@ -1430,12 +1430,12 @@
 			, marginLeftLabel : 10
 			, marginBottom : 10
 			, titleAttrs : {
-				"font-size" : 16
+				"font-size" : 18
 				, fill : "#343434"
 				, "text-anchor" : "start"
 			}
 			, labelAttrs : {
-				"font-size" : 12
+				"font-size" : 16
 				, fill : "#343434"
 				, "text-anchor" : "start"
 			}

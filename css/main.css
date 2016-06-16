@@ -78,3 +78,16 @@ div.user-comments-title {
      padding-top: 20px;
      margin-bottom: 20px;
 }
+
+/* Modal Content/Box */
+#modal {
+     font-size: 40px;
+     color: white;
+     background-color: #337AB7;
+     box-sizing: border-box;
+}
+
+#modal-text {
+     padding: 40px;
+     background-color: #337AB7;
+}

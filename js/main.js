@@ -1456,7 +1456,6 @@ $(document).on("click", "path", function(){
 
      // On Click button associated with the Search Button
      $(document).on('click', 'path', function(){
-          scrollDown();
           var searchTerm = $(this).attr("data-id");
 
           $('#commentTable').empty();
@@ -1568,8 +1567,23 @@ $(document).on("click", "path", function(){
           }  // Close if statement (eliminates pending African countries)
      });
 
-}); // Closes jQuery
+     $( "#modal" ).dialog({
+            height: 0,
+            modal: true,
+            autoOpen: false,
+            //set a timeout of 3 secs to close it again, when opened
+            open: function(event, ui) {
+                 //hide close button.
+                 $(this).parent().children().children('.ui-dialog-titlebar-close').hide();
+                 setTimeout("$('#modal').dialog('close')", 3000);
+            },
+            //when closing, make the textarea readonly
+            close : function(){
+              $('textarea').attr('readonly', 'readonly');
+            }
+     });
 
+}); // Closes jQuery
 
 
 
@@ -1578,19 +1592,15 @@ function toTitleCase(str)
     return str.replace(/\w\S*/g, function(txt){return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();});
 }
 
-function scrollDown() {
-          window.scroll(0, 40);
-}
-
 function validateForm() {
     var x = document.forms["myForm"]["fname"].value;
     var y = document.forms["myForm"]["fcomment"].value;
     if (x == null || x == "") {
-        alert("Please fill out every field.");
+        $('#modal').dialog('open');
         return false;
     }
     else if (y == null || y == "") {
-        alert("Please fill out every field.");
+        $('#modal').dialog('open');
         return false;
     }
     else {
