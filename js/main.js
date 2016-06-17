@@ -1568,20 +1568,50 @@ $(document).on("click", "path", function(){
      });
 
      $( "#modal" ).dialog({
-            height: 0,
-            modal: true,
-            autoOpen: false,
-            //set a timeout of 3 secs to close it again, when opened
-            open: function(event, ui) {
-                 //hide close button.
-                 $(this).parent().children().children('.ui-dialog-titlebar-close').hide();
-                 setTimeout("$('#modal').dialog('close')", 3000);
+          height: 0,
+          modal: true,
+          autoOpen: false,
+          //set a timeout of 3 secs to close it again, when opened
+          open: function(event, ui) {
+               //hide close button.
+               $(this).parent().children().children('.ui-dialog-titlebar-close').hide();
+               setTimeout("$('#modal').dialog('close')", 3000);
             },
             //when closing, make the textarea readonly
             close : function(){
-              $('textarea').attr('readonly', 'readonly');
+               $('textarea').attr('readonly', 'readonly');
             }
      });
+
+ // Begin Flickr API
+
+     $(document).on('click', 'path', function(evt){
+         evt.preventDefault();
+         var searchTerm = $(this).attr("data-id");
+         if (searchTerm.length > 2) {
+         $('#hOne').html("Images from " +  toTitleCase(searchTerm));
+         var submitButton = $('#submit');
+
+        // the AJAX part
+        var flickerAPI = "http://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?";
+        var searchTermValue = searchTerm;
+        var flickrOptions = {
+          tags: searchTermValue,
+          format: "json"
+        };
+        function displayPhotos(data) {
+          var photoHTML= "<br>"; 
+          $.each(data.items,function(i,photo) {
+            photoHTML += '<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">' + '<a href="' + photo.link + '">' + '<img class="img-thumbnail" src="' + photo.media.m+'"></a>' + '</div>';
+          }); // end each
+          $('#photos').html(photoHTML);
+
+        }
+        $.getJSON(flickerAPI, flickrOptions, displayPhotos);
+        } // Closes search term conditional
+      }); // end click
+
+          // End Flickr API     
 
 }); // Closes jQuery
 
